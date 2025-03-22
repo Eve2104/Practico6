@@ -11,7 +11,9 @@
     <br>
     <br>
     <br>
-    <h2>Vení al Gym! 💪🏻</h2>
+    <div class="titulo">
+        <h2>Vení al Gym! 💪🏻</h2>
+    </div>
     <form>
             <fieldset>
                 <legend>🙋‍♂️​ Datos Personales 👀</legend>
@@ -37,9 +39,10 @@
                 <br>
                 <label>Sexo:* </label>
                 <div class="radio-group">
-                    <input type="radio" name="sexo" value="femenino" required> Femenino
+                    <input type="radio" name="sexo" value="femenino" checked required> Femenino
                     <input type="radio" name="sexo" value="masculino"> Masculino
                     <input type="radio" name="sexo" value="otro"> Otro
+                </div>    
             </fieldset>
             <div class="puntos"></div>
         
@@ -52,7 +55,7 @@
             <input type="email" id="email" placeholder="Ej: mail@gmail.com" required>
         </fieldset>
         <div class="puntos"></div>
-        <fieldset class="fieldsetactividades">
+            <fieldset class="fieldsetactividades">
             <legend>🚴🏻‍♂️ Actividades 🤸🏼‍♂️</legend>
             <p>Por favor, indicá cuáles actividades te interesan.</p>
             
@@ -70,7 +73,6 @@
             <input type="checkbox"> Rugby
             <input type="checkbox"> Voley
         </fieldset>
-
         <div class="condiciones">
             <input id="aceptarcondiciones" type="checkbox" required> Acepto las condiciones* <br>
             <input type="checkbox" checked> Deseo recibir novedades
@@ -85,7 +87,6 @@
             <button onclick="limpiarFormulario()">Restablecer</button>
             <button onclick="cambiarEstilo()">Cambiar estilo</button>
         </div>
-    </div>
 </form>
     <script src="./js/script.js"></script>
 </body>
